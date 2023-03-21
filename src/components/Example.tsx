@@ -1,10 +1,8 @@
-import React from 'react'
-import styles from './Example.module.scss'
+import React from 'react';
+import styles from './Example.module.scss';
 
-const Example = () => {
-  return (
-    <div className={styles.title}>Example</div>
-  )
-}
+const Example = () => (
+  <div className={styles.title}>Example</div>
+);
 
-export default Example
+export default Example;
