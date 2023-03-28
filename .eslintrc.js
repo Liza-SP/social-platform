@@ -7,6 +7,7 @@ module.exports = {
     'plugin:react/recommended',
     // 'standard-with-typescript'
     'airbnb',
+    'plugin:i18next/recommended',
   ],
   overrides: [
   ],
@@ -21,6 +22,7 @@ module.exports = {
   plugins: [
     'react',
     '@typescript-eslint',
+    'i18next',
   ],
   rules: {
     'react/jsx-filename-extension': [2, { extensions: ['.js', '.jsx', '.tsx'] }],
@@ -39,6 +41,7 @@ module.exports = {
     'max-len': ['error', { code: 120 }],
     'no-promise-executor-return': 'warn',
     'implicit-arrow-linebreak': 'warn',
+    'i18next/no-literal-string': ['error', { markupOnly: true }],
   },
   settings: {
   },
