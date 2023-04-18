@@ -22,7 +22,7 @@
     "include": [
       "./src/**/*.ts",
       "./src/**/*.tsx",
-      "./config/jest/setupTest.ts",
+      "./config/jest/setupTests.ts",
       "./src/app/types/global.d.ts"
     ]
 }

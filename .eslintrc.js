@@ -39,7 +39,7 @@ module.exports = {
     'react/react-in-jsx-scope': 0,
     'import/extensions': 0,
     'no-underscore-dangle': 0,
-    'max-len': ['error', { code: 120, ignoreComments: true }],
+    'max-len': ['error', { code: 141, ignoreComments: true }],
     'no-promise-executor-return': 'warn',
     'implicit-arrow-linebreak': 'warn',
     'i18next/no-literal-string': ['error', { markupOnly: true }],
