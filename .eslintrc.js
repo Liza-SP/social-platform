@@ -2,29 +2,22 @@ module.exports = {
   env: {
     browser: true,
     es2021: true,
-    jest: true,
+    jest: true
   },
-  extends: [
-    'plugin:react/recommended',
-    // 'standard-with-typescript'
-    'airbnb',
-    'plugin:i18next/recommended',
-  ],
+  extends: ['plugin:react/recommended', 'airbnb', 'plugin:i18next/recommended', 'plugin:storybook/recommended'],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaFeatures: {
-      jsx: 'true',
+      jsx: 'true'
     },
     ecmaVersion: 'latest',
-    sourceType: 'module',
+    sourceType: 'module'
   },
-  plugins: [
-    'react',
-    '@typescript-eslint',
-    'i18next',
-  ],
+  plugins: ['react', '@typescript-eslint', 'i18next'],
   rules: {
-    'react/jsx-filename-extension': [2, { extensions: ['.js', '.jsx', '.tsx'] }],
+    'react/jsx-filename-extension': [2, {
+      extensions: ['.js', '.jsx', '.tsx']
+    }],
     'import/no-unresolved': 0,
     'import/prefer-default-export': 'off',
     'import/no-extraneous-dependencies': 'off',
@@ -37,28 +30,25 @@ module.exports = {
     'react/react-in-jsx-scope': 0,
     'import/extensions': 0,
     'no-underscore-dangle': 0,
-    'max-len': ['error', { code: 141, ignoreComments: true }],
+    'max-len': ['error', {
+      code: 141,
+      ignoreComments: true
+    }],
     'no-promise-executor-return': 'warn',
     'implicit-arrow-linebreak': 'warn',
-    'i18next/no-literal-string': [
-      'error',
-      {
-        markupOnly: true,
-        ignoreAttribute: ['data-testid'],
-      },
-    ],
+    'i18next/no-literal-string': ['error', {
+      markupOnly: true,
+      ignoreAttribute: ['data-testid', 'to']
+    }]
   },
-  settings: {
-  },
+  settings: {},
   globals: {
-    __IS_DEV__: true,
+    __IS_DEV__: true
   },
-  overrides: [
-    {
-      files: ['**/src/**/*.test.{ts,tsx}'],
-      rules: {
-        'i18next/no-literal-string': 'off',
-      },
-    },
-  ],
+  overrides: [{
+    files: ['**/src/**/*.test.{ts,tsx}'],
+    rules: {
+      'i18next/no-literal-string': 'off'
+    }
+  }]
 };
