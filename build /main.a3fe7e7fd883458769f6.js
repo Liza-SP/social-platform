@@ -4499,7 +4499,7 @@ var AppLink = function AppLink(props) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "ThemeButton": () => (/* binding */ ThemeButton),
+/* harmony export */   "ButtonTheme": () => (/* binding */ ButtonTheme),
 /* harmony export */   "Button": () => (/* binding */ Button)
 /* harmony export */ });
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
@@ -4526,10 +4526,10 @@ var __rest = undefined && undefined.__rest || function (s, e) {
 
 
 
-var ThemeButton;
-(function (ThemeButton) {
-  ThemeButton["CLEAR"] = "clear";
-})(ThemeButton || (ThemeButton = {}));
+var ButtonTheme;
+(function (ButtonTheme) {
+  ButtonTheme["CLEAR"] = "clear";
+})(ButtonTheme || (ButtonTheme = {}));
 var Button = function Button(props) {
   var className = props.className,
     theme = props.theme,
@@ -4585,7 +4585,7 @@ var LangSwitcher = function LangSwitcher(_a) {
   };
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(_Button_Button__WEBPACK_IMPORTED_MODULE_2__.Button, __assign({
     className: (0,shared_lib_classNames_classNames__WEBPACK_IMPORTED_MODULE_1__.classNames)('', {}, [className]),
-    theme: _Button_Button__WEBPACK_IMPORTED_MODULE_2__.ThemeButton.CLEAR,
+    theme: _Button_Button__WEBPACK_IMPORTED_MODULE_2__.ButtonTheme.CLEAR,
     onClick: toggle
   }, {
     children: t('Язык')
@@ -4633,7 +4633,7 @@ var ThemeSwitcher = function ThemeSwitcher(_a) {
     theme = _b.theme,
     toggleTheme = _b.toggleTheme;
   return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(shared_ui_Button_Button__WEBPACK_IMPORTED_MODULE_5__.Button, __assign({
-    theme: shared_ui_Button_Button__WEBPACK_IMPORTED_MODULE_5__.ThemeButton.CLEAR,
+    theme: shared_ui_Button_Button__WEBPACK_IMPORTED_MODULE_5__.ButtonTheme.CLEAR,
     className: (0,shared_lib_classNames_classNames__WEBPACK_IMPORTED_MODULE_2__.classNames)('', {}, [className]),
     onClick: toggleTheme
   }, {
